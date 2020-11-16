@@ -1,8 +1,8 @@
-import Header from '../components/shared/Header'
+import BaseLayout from '../components/layouts/BaseLayout'
 export default function Portfolios() {
     return (
-        <>
-            <Header />
-        </>
+        <BaseLayout>
+            I'm portfolios page
+        </BaseLayout>
     )
 }
