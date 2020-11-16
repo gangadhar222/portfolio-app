@@ -18,6 +18,13 @@ export default function Header() {
       <Link href="/cv">
         <a> Cv </a>
       </Link>
+      <style jsx>
+        {
+          `
+          
+          `
+        }
+      </style>
     </>
   );
 }
