@@ -1,4 +1,5 @@
 import BaseLayout from "../components/layouts/BaseLayout";
+import Link from 'next/link'
 import Axios from "axios";
 
 export default function Portfolios({ posts }) {
@@ -6,7 +7,13 @@ export default function Portfolios({ posts }) {
     <BaseLayout>
       <ul>
         {posts.map((post) => (
-          <li key={post.id}>{post.id}</li>
+          <li key={post.id}>
+              <Link as={`portfolios/${post.id}`} href={`/portfolios/[id]`}>
+                  <a>
+                      {post.title}
+                  </a>
+              </Link>
+          </li>
         ))}
       </ul>
     </BaseLayout>
